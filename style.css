@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/*-------------HEADER--------------*/
+
+header{
+    background-color: pink;
+}
+
+.txtNome{
+    background-color: aqua;
+    display: block;
+    margin: 5vh;
+}
+
+.botao{
+    margin: 5vh;
+}
