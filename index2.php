@@ -1,7 +1,7 @@
 <?php
 
-include_once './_dados.php';
-include_once './_header.php';
+include_once './includes/_dados.php';
+include_once './includes/_header.php';
 include_once './_head.php';
 
 ?>

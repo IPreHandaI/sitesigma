@@ -21,6 +21,10 @@ header{
     margin: 5vh;
 }
 
+.card{
+    text-align: center;
+}
+
 .botao{
     margin: 5vh;
 }
