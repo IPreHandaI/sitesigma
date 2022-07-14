@@ -35,4 +35,19 @@ $produtos = array(
     30 => array('nome'=>'Ahri Perfeita','preco'=>'1200','descrição'=>'Descrição da Ahri perfeita', 'imagem'=>'arhi1.jpg')
 );
 
+$sql = '';
+foreach ($produtos as $i => $value) {
+    $nome = $value["nome"];
+    $descricao = $value["descrição"];
+    $imagem = $value["imagem"];
+    $preco = $value["preco"];
+    
+    $sql = "$sql <br> INSERT INTO produtos(Nome, Descricao, Imagem, Preco, CategoriaID, Ativo) VALUES('$nome', '$descricao', '$imagem', '$preco');" ;
+
+}
+echo $sql;
+
+/*foreach ($produtos as $produtos) {
+    $sql = "INSERT produtos (nome, preco, descricao, imagem VALUES ({$produtos['nome']} {$produtos ['preco']} {$produtos[descricao]} {$produtos[imagem]}) "
+}*/
 ?>

@@ -28,3 +28,7 @@ header{
 .botao{
     margin: 5vh;
 }
+
+.container{
+    text-align: center;
+}

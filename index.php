@@ -1,14 +1,34 @@
 <?php
 include_once './includes/_head.php';
 include_once './includes/_header.php';
-include_once './includes/_dados.php';
+include_once './includes/_banco.php';
 ?>
 
 <div class="container">
     <h2 class="clear">Promoção</h2>
-    <div class="row mt-5">
+    <div class="row m-4">
     
         <?php 
+        //crio uma variavel que contem SQL executado
+        $sql = "SELECT * FROM categorias WHERE Ativo = 1";
+        //executa o comando SQL
+        $exec = mysqli_query($conn ,$sql);
+        //informar a qauntidade de registros de dados
+        $numProdutos = mysqli_num_rows($exec);
+        //percorre todos os dados extraidos do banco
+        while ($dados = mysqli_fetch_assoc($exec)) {
+           echo '<h1>' . $dados['Nome'] .'</h1>';
+           
+           
+            /*serve para ver se esta entregando tudo do banco de dados
+            echo '<pre>';
+            print_r($dados);
+            echo '</pre>';
+            */
+        }
+
+
+
             for ($i=0; $i < 5; $i++) { 
         
         ?>
