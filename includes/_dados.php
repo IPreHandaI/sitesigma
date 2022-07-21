@@ -42,10 +42,10 @@ foreach ($produtos as $i => $value) {
     $imagem = $value["imagem"];
     $preco = $value["preco"];
     
-    $sql = "$sql <br> INSERT INTO produtos(Nome, Descricao, Imagem, Preco, CategoriaID, Ativo) VALUES('$nome', '$descricao', '$imagem', '$preco');" ;
+    $sql = "$sql <br> INSERT INTO produtos(Nome, descrição, Imagem, Preco, CategoriaID, Ativo) VALUES('$nome', '$descricao', '$imagem', '$preco', 1, 1);" ;
 
 }
-echo $sql;
+
 
 /*foreach ($produtos as $produtos) {
     $sql = "INSERT produtos (nome, preco, descricao, imagem VALUES ({$produtos['nome']} {$produtos ['preco']} {$produtos[descricao]} {$produtos[imagem]}) "

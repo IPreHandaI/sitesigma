@@ -10,7 +10,7 @@ include_once './includes/_banco.php';
     
         <?php 
         //crio uma variavel que contem SQL executado
-        $sql = "SELECT * FROM categorias WHERE Ativo = 1";
+        $sql = "SELECT * FROM produtos WHERE Ativo = 1 LIMIT 3";
         //executa o comando SQL
         $exec = mysqli_query($conn ,$sql);
         //informar a qauntidade de registros de dados
@@ -25,19 +25,14 @@ include_once './includes/_banco.php';
             print_r($dados);
             echo '</pre>';
             */
-        }
 
-
-
-            for ($i=0; $i < 5; $i++) { 
-        
         ?>
         <div class="card m-3" style="width: 18rem;">
-        <img src="./imgs/<?php echo $produtos[$i]['imagem'];?>" class="card-img-top" alt="...">
+        <img src="./imgs/<?php echo $dados['Imagem'];?>" class="card-img-top" alt="...">
             <div class="card-body">
-            <h5 class="card-title"><?php echo $produtos[$i]['nome'];?></h5>
-            <p class="card-text"><?php echo $produtos[$i]['descrição'];?></p>
-            <a href="produtos.php?id=<?php echo $i;?>&tipo=promocao" class="btn btn-primary">Comprar</a>
+            <h5 class="card-title"><?php echo $dados['Nome'];?></h5>
+            <p class="card-text"><?php echo $dados['descrição']?></p>
+            <a href="produtos.php?id=<?php echo $dados['ProdutoID'];?>&tipo=promocao" class="btn btn-primary">Comprar</a>
             </div>
         </div>
         <?php
