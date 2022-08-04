@@ -12,7 +12,6 @@ echo $id;
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1><?php echo $produtos[$id]['nome'];?></h1>
             <p><?php echo $produtos[$id]['descrição'];?></p>
             <img src="./imgs/<?php echo $produtos[$id]['imagem'];?>">
             <h4>R$ <?php echo $produtos[$id]['preco'];?></h4>

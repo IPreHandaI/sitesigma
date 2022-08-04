@@ -30,7 +30,6 @@ include_once './includes/_banco.php';
         <div class="card m-3" style="width: 18rem;">
         <img src="./imgs/<?php echo $dados['Imagem'];?>" class="card-img-top" alt="...">
             <div class="card-body">
-            <h5 class="card-title"><?php echo $dados['Nome'];?></h5>
             <p class="card-text"><?php echo $dados['descrição']?></p>
             <a href="produtos.php?id=<?php echo $dados['ProdutoID'];?>&tipo=promocao" class="btn btn-primary">Comprar</a>
             </div>
