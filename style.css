@@ -1,34 +1,95 @@
 *{
     margin: 0%;
     padding: 0%;
-}
 
-a{
-    text-decoration: none;
 }
 
 
 
-/*-------------HEADER--------------*/
 
-header{
-    background-color: pink;
+.banner2{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    background: #111;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.txtNome{
-    background-color: aqua;
-    display: block;
-    margin: 5vh;
+/* coluna amarela */ 
+
+.banner2:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30vw;
+    height: 100%;
+    background: rgb(54, 244, 199);
+    transform-origin: top;
+    transform: skewX(-25deg);
+    z-index: 1;
 }
 
-.card{
-    text-align: center;
+/* video bg */ 
+
+.banner2 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.10;  
+    pointer-events: none;
 }
 
-.botao{
-    margin: 5vh;
+/* caixa de texto do banner */ 
+
+
+.banner2 .imgBox2{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    z-index: 2;
 }
 
-.container{
-    text-align: center;
+.banner2 .imgBox2 img{
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+    z-index: 10000;
+    right: 1vh;
+}
+
+.textBox2{
+    width: 50%;
+    display: grid;
+}
+
+#h2login{
+    width: 74%;
+    color: aliceblue;
+}
+
+#aa{
+    width: 70%;
+    height: 60%;
+    margin: 0 0 10% 0;
+    border-radius: 1vh;
+    background-color: rgb(50, 172, 143);
+    border: 0;
+    color: aliceblue;
+}
+
+#botaologin{
+    background-color: rgb(50, 172, 143);
+    width: 10%;
+    padding: 1%;
+    border-radius: 1vh;
 }

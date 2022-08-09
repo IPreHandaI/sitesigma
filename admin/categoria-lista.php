@@ -1,9 +1,13 @@
 <?php 
 
-    include_once '../includes/_banco.php';
-    include_once './_header.php';
+    //valida se existe uma sessao
+    include_once './valida.php';
 
-    //sql de consulta
+    //conexao com obanco de dados
+    include_once '../includes/_dados.php';
+    //include do aequivo de head
+    include_once '_head.php'.
+    //SQL de consulta
     $sql = "SELECT * FROM categorias";
     //executa a consulta de dados(variavel de conexao de dados, vairavel sql de consulta)
     $resultado = mysqli_query($conn,$sql);

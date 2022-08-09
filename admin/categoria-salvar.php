@@ -3,11 +3,11 @@
     include_once '../includes/_banco.php';
     include_once './_head.php';
     //verifica se o geet foi informado e se ele nao esta vazio
-    if (isset($GET['id']) || !empty($_GET['id'])){ //captura o ID
-        $id = $GET['id'];
+    if (isset($_GET['id']) || !empty($_GET['id'])){ //captura o ID
+        $id = $_GET['id'];
         //consulta de dados
         $sql = "SELECT * FROM categorias WHERE CategoriaID =" .$id;
-        $resultado = mysqli_query($conexao,$sql);
+        $resultado = mysqli_query($conn,$sql);
         //parametri que converte as colunas em campos 
         $dados = mysqli_fetch_array($resultado,MYSQLI_ASSOC);
     }else{
@@ -33,6 +33,7 @@
             <label for="descrição">Descrição:</label><br>
             <textarea id="descrição" name="descrição"><?php echo $dados['descrição'];?></textarea><br>
             <label for="imagem">Imagem:</label><br>
+
             <?php
             //verifica se existe a imagem
             if(!empty($dados['Imagem']) ){

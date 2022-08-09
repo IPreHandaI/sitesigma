@@ -1,18 +1,23 @@
-<header>
+<?php 
 
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" href="index.php">Site sigma</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="index.php">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="produtos.php">Produtos</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="contato.php">Contato</a>
-  </li>
-</ul>
+include_once './includes/_head.php';
 
-</header>
+?>
+
+<body>
+    <header>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.php">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="produtos.php">Produtos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contato.php">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./admin/categoria-lista.php">Produtos</a>
+            </li>
+        </ul>
+    </header>

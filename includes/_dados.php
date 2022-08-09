@@ -1,53 +1,39 @@
-<?php  
+<?php
 
-$produtos = array(
-    0 => array('nome'=>'Ahri Linda','preco'=>'1200','descrição'=>'Descrição da Ahri linda', 'imagem'=>'arhi1.jpg'),
-    1 => array('nome'=>'Ahri Bonita','preco'=>'1200','descrição'=>'Descrição da Ahri bonita', 'imagem'=>'arhi2.jpg'),
-    2 => array('nome'=>'Ahri Maravilhosa','preco'=>'1200','descrição'=>'Descrição da Ahri maravilhosa', 'imagem'=>'arhi1.jpg'),
-    3 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    4 => array('nome'=>'Ahri Linda','preco'=>'1200','descrição'=>'Descrição da Ahri linda', 'imagem'=>'arhi1.jpg'),
-    5 => array('nome'=>'Ahri Bonita','preco'=>'1200','descrição'=>'Descrição da Ahri bonita', 'imagem'=>'arhi2.jpg'),
-    6 => array('nome'=>'Ahri Maravilhosa','preco'=>'1200','descrição'=>'Descrição da Ahri maravilhosa', 'imagem'=>'arhi1.jpg'),
-    7 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    8 => array('nome'=>'Ahri Linda','preco'=>'1200','descrição'=>'Descrição da Ahri linda', 'imagem'=>'arhi1.jpg'),
-    9 => array('nome'=>'Ahri Bonita','preco'=>'1200','descrição'=>'Descrição da Ahri bonita', 'imagem'=>'arhi2.jpg'),
-    10 => array('nome'=>'Ahri Maravilhosa','preco'=>'1200','descrição'=>'Descrição da Ahri maravilhosa', 'imagem'=>'arhi1.jpg'),
-    11 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    12 => array('nome'=>'Ahri Linda','preco'=>'1200','descrição'=>'Descrição da Ahri linda', 'imagem'=>'arhi1.jpg'),
-    13 => array('nome'=>'Ahri Bonita','preco'=>'1200','descrição'=>'Descrição da Ahri bonita', 'imagem'=>'arhi2.jpg'),
-    14 => array('nome'=>'Ahri Maravilhosa','preco'=>'1200','descrição'=>'Descrição da Ahri maravilhosa', 'imagem'=>'arhi1.jpg'),
-    15 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    16 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    17 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    18 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    19 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    20 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    21 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    22 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    23 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    24 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    25 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    25 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    26 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    27 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    28 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    29 => array('nome'=>'Ahri Gostosa','preco'=>'1200','descrição'=>'Descrição da Ahri gostosa', 'imagem'=>'arhi2.jpg'),
-    30 => array('nome'=>'Ahri Perfeita','preco'=>'1200','descrição'=>'Descrição da Ahri perfeita', 'imagem'=>'arhi1.jpg')
-);
+    $produtos = [
+        0 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri1.jpg'),
+        1 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri2.jpg'),
+        2 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri3.jpg'),
+        3 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri4.jpg'),
+        4 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri5.jpg'),
+        5 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri6.jpg'),
+        6 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri7.jpg'),
+        7 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri8.jpg'),
+        8 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri9.jpg'),
+        9 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri10.jpg'),
+        10 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri11.jpg'),
+        11 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri12.jpg'),
+        12 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri13.jpg'),
+        13 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri14.jpg'),
+        14 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri15.jpg'),
+        15 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri16.jpg'),
+        16 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri17.png'),
+        17 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri18.jpg'),
+        18 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri19.jpg'),
+        19 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri20.jpg'),
+        20 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri21.jpg'),
+        21 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri22.jpg'),
+        22 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri23.jpg'),
+        23 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri24.jpg'),
+        24 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri25.jpg'),
+        25 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri26.jpg'),
+        26 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri27.webp'),
+        27 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri28.jpg'),
+        28 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri29.jpg'),
+        29 => array('Nome' => 'Ahri', 'Preco' => '1M', 'Descrição' => 'Perfeita', 'Img' => 'Ahri30.jpg')
 
-$sql = '';
-foreach ($produtos as $i => $value) {
-    $nome = $value["nome"];
-    $descricao = $value["descrição"];
-    $imagem = $value["imagem"];
-    $preco = $value["preco"];
-    
-    $sql = "$sql <br> INSERT INTO produtos(Nome, descrição, Imagem, Preco, CategoriaID, Ativo) VALUES('$nome', '$descricao', '$imagem', '$preco', 1, 1);" ;
-
-}
+    ];
 
 
-/*foreach ($produtos as $produtos) {
-    $sql = "INSERT produtos (nome, preco, descricao, imagem VALUES ({$produtos['nome']} {$produtos ['preco']} {$produtos[descricao]} {$produtos[imagem]}) "
-}*/
+
 ?>

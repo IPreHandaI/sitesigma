@@ -1,29 +1,17 @@
-<?php
+<?php 
+
+$a = 'Detalhes';
+
+
 include_once './includes/_head.php';
 include_once './includes/_banco.php';
 include_once './includes/_header.php';
 
 $id = $_GET['id'];
-
-echo $id;
-
 ?>
 
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <p><?php echo $produtos[$id]['descrição'];?></p>
-            <img src="./imgs/<?php echo $produtos[$id]['imagem'];?>">
-            <h4>R$ <?php echo $produtos[$id]['preco'];?></h4>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">Voltar</div>
-        <div class="col">Comprar</div>
-    </div>
-</div>
 
-
-<?php
-include_once './includes/_footer.php';
-?>
+<img id="imgpd" src="./imgs/<?php echo $produtos[$id]['Img'];?>">
+    <h1><?php echo $produtos[$id]['Nome'];?></h1>
+    <h5><?php echo $produtos[$id]['Preco'];?></h5>
+    <p><?php echo $produtos[$id]['Descrição'];?></p>
