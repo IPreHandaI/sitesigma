@@ -4,16 +4,16 @@
     include_once './valida.php';
 
     //conexao com obanco de dados
-    include_once '../includes/_dados.php';
+    include_once '../includes/_banco.php';
     //include do aequivo de head
-    include_once '_head.php'.
+    include_once '../includes/_head.php';
     //SQL de consulta
     $sql = "SELECT * FROM categorias";
     //executa a consulta de dados(variavel de conexao de dados, vairavel sql de consulta)
     $resultado = mysqli_query($conn,$sql);
     //conta quantos registros existem
     $total = mysqli_num_rows($resultado);
-    include_once './includes/_menu.php';
+    include_once '_menu.php';
 ?>
     <main>
         <h2>Adminstração das Catregorias</h2>
@@ -27,12 +27,12 @@
             </tr>
             <?php
             //verifica se existe informações no banco de dados
-            if($resutado){
+            if($resultado){
                 //converte os resultados em uma linha da matriz 
                 while ($dado = mysqli_fetch_array($resultado)) {
             ?>
             <tr>
-                <td><?php echo $dado['CategoriaID'];?></td>
+                <td><?php echo $dado['ID'];?></td>
                 <td><a href="categoria-salvar.php?acao=salvar&id=<?php echo $dado['CategoriaID'];?>"><?php echo $dado['Nome'];?></a></td>
                 <td><a href="categoria-processa.php?acao=excluir&id=<?php echo $dado['CategoriaID'];?>">Excluir</a></td>
             </tr>

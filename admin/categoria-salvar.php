@@ -1,7 +1,7 @@
 <?php 
 
     include_once '../includes/_banco.php';
-    include_once './_head.php';
+    include_once '../includes/_head.php';
     //verifica se o geet foi informado e se ele nao esta vazio
     if (isset($_GET['id']) || !empty($_GET['id'])){ //captura o ID
         $id = $_GET['id'];
@@ -26,7 +26,7 @@
         <hr>
         <form action="categoria-processa.php" method="post" enctype="multipart/form-data">
             <input type="hidden" value="salvar" name="acao">
-            <input type="text" value="<?php echo $dadps['Imagem'];?>" name="imagem">
+            <input type="text" value="<?php echo $dados['Imagem'];?>" name="imagem">
             <input type="text" name="id" value="<?php echo $id;?>"><br>
             <label for="nome">Nome: </label><br>
             <input type="text" id="nome" name="nome" value="<?php echo $dados['Nome'];?>"><br>
