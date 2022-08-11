@@ -2,13 +2,11 @@
 $servername = "localhost";
 $database = "sitesigma";
 $username = "root";
-$password = " ";
+$password = "";
 // Create connection
-//$conn = mysqli_connect($servername, $database, $username, $password);
-// Check connection
-//if (!$conn) {
-  //  die("Connection failed: " . mysqli_connect_error());
-//s}
-echo "Connected successfully";
+$conn = mysqli_connect($servername, $username, $password, $database);
 
+if (!$conn) {
+  exit("Connection failed: " . mysqli_connect_error());
+}
 ?>

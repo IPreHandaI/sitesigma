@@ -17,7 +17,7 @@ include_once './includes/_head.php';
                 <a class="nav-link" href="contato.php">Contato</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./admin/categoria-lista.php">Produtos</a>
+                <a class="nav-link" href="./admin/categoria-processa.php">Produtos</a>
             </li>
         </ul>
     </header>

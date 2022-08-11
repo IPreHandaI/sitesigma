@@ -34,6 +34,17 @@
 
     ];
 
+    $sql = '';
 
+    foreach ($produtos as $i => $value) {
+        $nome = $value['Nome'];
+        $preco = $value['Preco'];
+        $descricao = $value['Descrição'];
+        $img = $value['Img'];
+
+        $sql = "$sql <br> INSERT INTO produtos(Nome, Preco, descricao, Img, CategoriaID, ativo) VALUE('$nome', '$preco', '$descricao', '$img', 1, 1);";
+    }
+
+    
 
 ?>

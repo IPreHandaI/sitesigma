@@ -3,7 +3,7 @@
     session_start();
 
     //conzao com o banco de dados
-    include_once '../includes/_dados.php';
+    include_once '../includes/_banco.php';
 
     //captura a acao do usuario
     $acao = $_REQUEST['acao'];
@@ -31,7 +31,7 @@
             $resultado = mysqli_query($conn,$sql);
             //parametro que converte as colunas em campos
             $dados = mysqli_fetch_array($resultado,MYSQLI_ASSOC);
-
+            
             if (!empty($dados)) {
                 
                 //armazena informacao na sessao - usuario esta logado e o nome do usuario

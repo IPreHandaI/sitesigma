@@ -1,5 +1,5 @@
 <?php 
-include_once './includes/_dados.php';
+include_once '../includes/_dados.php';
 
 //captura de ação do usuário
 $acao = $_REQUEST['acao'];
