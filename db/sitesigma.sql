@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `categorias`
 --
 
-CREATE TABLE `categories` (
+CREATE TABLE `categorias` (
   `CategoriaID` int(11) NOT NULL,
   `Nome` varchar(100) NOT NULL,
   `Ativo` tinyint(1) NOT NULL
@@ -37,7 +37,7 @@ CREATE TABLE `categories` (
 -- Extraindo dados da tabela `categorias`
 --
 
-INSERT INTO `categories` (`ID`, `Nome`, `Ativo`) VALUES
+INSERT INTO `categorias` (`ID`, `Nome`, `Ativo`) VALUES
 (1, 'Carros', 1),
 (2, 'Flores', 1),
 (3, 'Gatineos', 1),
@@ -70,7 +70,7 @@ CREATE TABLE `produtos` (
 --
 -- Índices para tabela `categorias`
 --
-ALTER TABLE `categories`
+ALTER TABLE `categorias`
   ADD PRIMARY KEY (`CategoriaID`);
 
 --
@@ -86,7 +86,7 @@ ALTER TABLE `produtos`
 --
 -- AUTO_INCREMENT de tabela `categorias`
 --
-ALTER TABLE `categories`
+ALTER TABLE `categorias`
   MODIFY `CategoriaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --

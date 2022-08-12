@@ -42,7 +42,7 @@
         $descricao = $value['Descrição'];
         $img = $value['Img'];
 
-        $sql = "$sql <br> INSERT INTO produtos(Nome, Preco, descricao, Img, CategoriaID, ativo) VALUE('$nome', '$preco', '$descricao', '$img', 1, 1);";
+        $sql = "$sql <br> INSERT INTO produtos(Nome, Preco, Descricao, Img, CategoriaID, ativo) VALUE('$nome', '$preco', '$descricao', '$img', 1, 1);";
     }
 
     
