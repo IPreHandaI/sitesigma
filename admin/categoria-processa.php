@@ -4,8 +4,8 @@ include_once '../includes/_banco.php';
 //captura de ação do usuário
 $acao = $_REQUEST['acao'];
 $id = $_REQUEST ['id'];
-//codigo da categoria
 
+//codigo da categoria
 switch ($acao) {
     //acao de excluir dados
     case 'excluir':
@@ -20,17 +20,17 @@ switch ($acao) {
 
         break;
         
-    case 'salvar';
+    case 'salvar':
         //captura os dados
-        $nome = $_POST['nome'];
-        $descricao = $_POST['descricao'];
+        $nome = $_POST['Nome'];
+        $descricao = $_POST['Descricao'];
 
         //upload da imagem
         if ($_FILES['foto']['size'] > 0) {
             //pasta que armazena o arquivo
             $uploaddir = '../imagens/categorias/';
             //extrai a extensao da imagem
-            $extensao = pathinfo($_FILES['foto']['tmp+name'], $uploadfile);
+            $extensao = pathinfo($_FILES['foto']['tmp   _name'], $uploadfile);
         }else{
             $nomearquivo = $_POST['imagem'];
         }
@@ -41,7 +41,7 @@ switch ($acao) {
             $sql = "INSERT INTO `categorias`(`Nome`, `Descricao`, `Imagem`) VALUES('".$nome."', '".$descricao."', '".$nomearquivo."')";
         }else{
             //comando SQL do banco de dados que atualiza um registro
-            $sql = "UPDATE `categorias` SET `Nome`='".$nome."', `Descricao`='".$descricao."', `Imagem`='".$nomearquivo."' WHERE `CategoriaID`='".$id."'";
+            $sql = "UPDATE `categorias` SET `Nome`='".$nome."', `Descricao`='".$descricao."', `Imagem`='".$nomearquivo."' WHERE `CategoriaID`='".$id."' ";
         }
         //executa o comando de excluir
         mysqli_query($conn, $sql);

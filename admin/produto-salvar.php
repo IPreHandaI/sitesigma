@@ -7,7 +7,7 @@
 
     $sql = "SELECT * FROM categorias";
 
-    $resultado = mysqli_query($conexao, $sql);
+    $resultado = mysqli_query($conn, $sql);
 
 ?>
 

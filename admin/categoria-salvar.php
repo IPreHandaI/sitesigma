@@ -26,12 +26,10 @@
         <hr>
         <form action="categoria-processa.php" method="post" enctype="multipart/form-data">
             <input type="hidden" value="salvar" name="acao">
-            <input type="text" value="<?php echo $dados['Imagem'];?>" name="imagem">
-            <input type="text" name="id" value="<?php echo $id;?>"><br>
             <label for="nome">Nome: </label><br>
             <input type="text" id="nome" name="nome" value="<?php echo $dados['Nome'];?>"><br>
             <label for="descrição">Descrição:</label><br>
-            <textarea id="descrição" name="descrição"><?php echo $dados['descrição'];?></textarea><br>
+            <textarea id="descrição" name="descrição"><?php echo $dados['Descricao'];?></textarea><br>
             <label for="imagem">Imagem:</label><br>
 
             <?php
