@@ -1,16 +1,17 @@
 <?php 
 include_once '../includes/_banco.php';
+include_once '../includes/_dados.php';
 
 //captura de ação do usuário
 $acao = $_REQUEST['acao'];
-$id = $_REQUEST ['id'];
+$id = $_REQUEST['id'];
 
 //codigo da categoria
 switch ($acao) {
     //acao de excluir dados
     case 'excluir':
         //monta a SQL que exclui os resgistros
-        $sql = "DELETE FROM categorias WHERE CategoriaID =" .$id;
+        $sql = "DELETE FROM categoria WHERE categoriaid =" .$id;
         
         //executa o comando de excluir
         mysqli_query($conn, $sql);
@@ -22,26 +23,17 @@ switch ($acao) {
         
     case 'salvar':
         //captura os dados
-        $nome = $_POST['Nome'];
-        $descricao = $_POST['Descricao'];
+        $nome = $_POST['nome'];
+        $categoriaid = $_POST['CategoriaID'];
 
-        //upload da imagem
-        if ($_FILES['foto']['size'] > 0) {
-            //pasta que armazena o arquivo
-            $uploaddir = '../imagens/categorias/';
-            //extrai a extensao da imagem
-            $extensao = pathinfo($_FILES['foto']['tmp   _name'], $uploadfile);
-        }else{
-            $nomearquivo = $_POST['imagem'];
-        }
 
         //monta o sql conforme informa o id
         if (!isset($_POST['id']) || empty($_POST['id'])) {
             //comando SQL do banco de dados que inclui um registro
-            $sql = "INSERT INTO `categorias`(`Nome`, `Descricao`, `Imagem`) VALUES('".$nome."', '".$descricao."', '".$nomearquivo."')";
+            $sql = "INSERT INTO categoria(Nome, CategoriaID) VALUES('".$nome."', '".$categoriaid."')";
         }else{
             //comando SQL do banco de dados que atualiza um registro
-            $sql = "UPDATE `categorias` SET `Nome`='".$nome."', `Descricao`='".$descricao."', `Imagem`='".$nomearquivo."' WHERE `CategoriaID`='".$id."' ";
+            $sql = "UPDATE categoria SET Nome='".$nome."', categoriaid='".$categoriaid."' WHERE CategoriaID='".$id."' ";
         }
         //executa o comando de excluir
         mysqli_query($conn, $sql);

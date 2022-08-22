@@ -5,17 +5,18 @@
     include_once './_menu.php';
 
 
-    $sql = "SELECT * FROM categorias";
+    $sql = "SELECT * FROM produtos";
 
     $resultado = mysqli_query($conn, $sql);
+    $acao = $_REQUEST['acao'];
+    $id = $_REQUEST['id'];
 
 ?>
 
     <main>
         <h2>Administração dos Produtos</h2>
 
-        <form action="categoria-processa.php" method="post">
-            <input type="text" value="salvar" name="acao">
+        <form action="produto-processa.php" method="post">
             <label for="nome">Nome:</label></br>
             <input type="text" value="nome" name="nome">
             <textarea id="descricao" name="descricao"></textarea><br>
@@ -24,7 +25,7 @@
                 <?php
                 
                     while ($dado = mysqli_fetch_array($resultado)) {
-                        echo '<option value="'.$dado['CategoriaID'].'">'.$dado['Nome'].'</option>';
+                        echo '<option value="'.$dado['CategoriaID'].'">'.$dado['nome'].'</option>';
                     }
                 
                 ?>

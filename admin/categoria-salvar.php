@@ -6,15 +6,15 @@
     if (isset($_GET['id']) || !empty($_GET['id'])){ //captura o ID
         $id = $_GET['id'];
         //consulta de dados
-        $sql = "SELECT * FROM categorias WHERE CategoriaID =" .$id;
+        $sql = "SELECT * FROM categoria WHERE CategoriaID =" .$id;
         $resultado = mysqli_query($conn,$sql);
         //parametri que converte as colunas em campos 
         $dados = mysqli_fetch_array($resultado,MYSQLI_ASSOC);
     }else{
         $id = '';
         $dados['Nome'] = '';
-        $dados['Descricao'] = '';
-        $dados['Imagem'] = '';
+        $dados['Descrição'] = '';
+        $dados['Img'] = '';
     }
 
     include_once './_menu.php';
@@ -27,9 +27,9 @@
         <form action="categoria-processa.php" method="post" enctype="multipart/form-data">
             <input type="hidden" value="salvar" name="acao">
             <label for="nome">Nome: </label><br>
-            <input type="text" id="nome" name="nome" value="<?php echo $dados['Nome'];?>"><br>
+            <input type="text" id="nome" name="nome" value=""><br>
             <label for="descrição">Descrição:</label><br>
-            <textarea id="descrição" name="descrição"><?php echo $dados['Descricao'];?></textarea><br>
+            <textarea id="descrição" name="descrição"></textarea><br>
             <label for="imagem">Imagem:</label><br>
 
             <?php
